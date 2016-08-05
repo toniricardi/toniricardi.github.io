@@ -1,0 +1,18 @@
+---
+layout: page
+title: Empreendimentos Realizados 
+permalink: /empreendimentos/
+menu: empreendimentos
+description: Empreendimentos realizados pela Toni Construtora. Tivemos 100% de aprovação por nossos clientes.
+---
+
+<ul class="row flex-grid">
+{% for i in (1..30) %}
+	<li class="box-item">
+		<div class="capa">
+			<a class="sb" href="/assets/img/img-empreendimentos-toniconstrutora-{{ i }}.jpg" title="Geleria de imagens: Foto {{ i }} de 30"><i class="icon-zoom-in"></i></a>	
+		</div>
+		<img src="/assets/img/img-empreendimentos-toniconstrutora-{{ i }}.jpg" alt="Empreendimentos Toni Construtora  - Imagem {{ i }}">
+	</li>
+{% endfor %}
+</ul>

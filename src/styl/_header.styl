@@ -1,0 +1,62 @@
+.site-header
+	position relative
+	display table
+	width 100%
+	height rem(60px)
+	line-height rem(60px)
+	background-color $white
+	box-shadow 0 2px 4px rgba(0,0,0,.3)
+	z-index 1
+	.site-logo
+		position absolute
+		display block
+		top 0
+		left 0
+		padding 0 rem(20px)
+		width rem(240px)
+		height rem(60px)
+		line-height rem(60px)
+		background-color $white
+		img
+			vertical-align middle
+		+above(768px)
+			width rem(320px)
+	.sidebar-btn-open
+		right 0
+	.site-menu
+		display none
+		float right
+		li
+			float left
+			.site-menu-link
+				padding 0 rem(20px)
+				height rem(60px)
+	+above(960px)
+		.sidebar-btn-open
+			display none
+		.site-menu
+			display block
+
+.sidebar-btn-open, .sidebar-btn-close
+	display block
+	position absolute
+	top 0
+	width rem(60px)
+	height rem(60px)
+	background-color transparent
+	color $grey
+	text-align center
+	font-size rem(24px)
+	transition $transition
+	&:hover
+		opacity .8
+		
+.site-menu-link
+	display block
+	color $grey
+	font-size rem(14px)
+	background-color transparent
+	transition $transition
+	text-transform uppercase
+	&:hover
+		background-color $lgrey

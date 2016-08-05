@@ -1,0 +1,50 @@
+--- 
+layout: page 
+title: Fale Conosco
+permalink: /fale-conosco/ 
+description: Ficaremos felizes em atendê-lo. Estamos a disposição para tirar qualquer dúvida sua.
+---
+<div class="main-contact">
+  <div class="row">
+    <div class="col col-7">
+      <p>Preencha todos os campos do forumlário abaixo que retornaremos o mais rápido possível.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col col-7">
+      <form action="https://formspree.io/contato@toniconstrutora.com.br" method="post" class="form-contact">
+         <label for="iName" class="hidden">Nome:</label>
+         <input type="text" id="iName" name="nName" placeholder="* Nome" required>
+        
+          <label for="iPhone" class="hidden">Telefone:</label>
+          <input type="text" id="iPhone" name="nPhone" placeholder="* Telefone" required>
+        
+          <label for="iEnd" class="hidden">Endereço:</label>
+          <input type="text" id="iEnd" name="nEnd" placeholder="* Endereço" required>
+
+          <label for="iEmail" class="hidden">E-mail:</label>
+          <input type="text" id="iEmail" name="nEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="* E-mail" title="ex.: seunome@gmail.com" required>
+
+          <label for="iMsg" class="hidden">Mensagem:</label>
+          <textarea id="iMsg" name="nMsg" rows="5" placeholder="* Um breve descrição do seu projeto" required></textarea>
+          <span class="obs">* Todos os campos são obrigatórios</span>
+
+        <!-- Alerta -->
+        <p class="alert-success">Mensagem enviada com sucesso. Responderemos o mais breve possível</p>
+        <p class="alert-error">Erro ao enviar o e-mail. Por favor atualize a página e tente novamente</p>
+        <!-- End Alerta -->
+        <p><button class="btn btn-send-contact">Enviar</button></p>
+      </form>
+    </div>
+    <div class="col col-5 main-contact-page">
+      <h2>Informações de <span class="dest">Contato</span></h2>
+      <ul>
+        <li><span class="icon-location"></span>Rua {{ site.end }}</li>
+        <li><span class="icon-phone"></span>{{ site.phonelink }}</li>
+        <li><span class="icon-envelop"></span>{{ site.emaillink }}</li>
+        <li>Venha nos visitar. {{ site.atendimento }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

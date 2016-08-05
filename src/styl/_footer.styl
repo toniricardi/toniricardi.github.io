@@ -1,0 +1,161 @@
+.footer-top-bg
+	width 100%
+	height rem(200px)
+	background url('../img/footer-top-bg.png') repeat-x
+	background-size cover
+	
+.newsletter
+	padding rem(40px) 0
+	background-color #293f47	
+	h3
+		margin-top 0
+	h3, p
+		color $white
+		text-transform uppercase
+		text-align center
+	.newsletter-form
+		display table
+		margin-bottom rem(15px)
+		width 100%
+		clear both
+	input
+		display inline-block
+		margin 0
+		padding rem(10px)	
+		width 100%
+		background-color $white
+		border none
+		vertical-align middle
+		outline none
+		&:focus
+			background-color $lgrey
+	button
+		display inline-block
+		margin 0
+		padding rem(10px)	
+		width 100%
+		background-color $blue
+		color $white
+		text-transform uppercase
+		text-shadow 1px 1px 2px rgba(0,0,0,.3)
+		border none
+		vertical-align middle
+		outline none
+		cursor pointer
+		transition $transition
+		&:hover
+			opacity .7
+	.newsletter-security
+		display block
+		color #888
+		font-size rem(12px)
+		text-align center
+	+above(rem(650px))
+		.newsletter-row
+			margin 0 auto
+			max-width 80%
+	+above(rem(968px))
+		.newsletter-row
+			max-width 60%
+			input
+				width 60%
+				float left
+			button 
+				width 40%
+				float right
+	
+.footer 
+	position relative
+	padding rem(25px) 0
+	background-color $black
+	a
+		transition $transition
+		&:hover
+			color $white
+	.footer-logo
+		margin 0 auto rem(35px)
+		width rem(220px)
+	h4 
+		display table
+		margin 0 0 rem(25px)
+		padding-bottom rem(10px)
+		color $white
+		text-transform uppercase
+		border-bottom 2px solid $blue
+	.footer-contact, .footer-links
+		li
+			margin-bottom rem(10px)
+			color #ccc
+			font-size rem(14px)
+			&:last-child
+				margin-bottom 0
+	.footer-social
+		li
+			display inline-block
+			margin-right rem(8px)
+			&:last-child
+				margin-right 0
+		a
+			width rem(45px)
+			height rem(45px)
+			display block
+			line-height rem(45px)
+			color $white
+			text-align center
+			font-size rem(20px)
+			main-radius()
+			transition $transition
+			&:hover
+				opacity .7
+		.facebook
+			background-color #3a5795
+		.google
+			background-color #cb4437
+	.footer-copy
+		padding-top rem(30px)
+		p
+			margin 0
+			padding 0	
+			color #888
+			font-size rem(14px)
+			text-align center
+	.footer-bg
+		position absolute
+		right 0
+		bottom 0
+		width rem(112px)
+		height rem(84px)
+		background transparent url('../img/footer-bg.png') no-repeat
+		background-size cover
+	+above(rem(768px))
+		h4
+			display block
+		.footer-bg
+			width rem(212px)
+			height rem(158px)
+	+above(rem(960px))
+		.footer-bg
+			width rem(312px)
+			height rem(233px)
+			
+.cd-top 
+	display inline-block
+	position fixed
+	bottom rem(5px)
+	right rem(5px)
+	padding rem(3px) rem(8px)
+	background-color $blue
+	color $white
+	font-size rem(26px)
+	border-bottom rem(3px) solid rgba(0,0,0,.4)
+	visibility hidden
+	opacity 0
+
+.cd-top.cd-is-visible 
+	visibility visible
+	opacity 1
+
+.cd-top.cd-fade-out 
+	opacity .7
+
+			

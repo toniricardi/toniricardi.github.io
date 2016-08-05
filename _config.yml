@@ -1,0 +1,37 @@
+title: Toni Construtora - Bragança Paulista e Região
+email: contato@toniconstrutora.com.br
+description: A Toni Construtora é uma empresa sólida e de confiança há mais de 20 anos no mercado. Entre em contato conosco pelo telefone (11) 9 5651-0851
+baseurl: ""  
+url: "https://toniconstrutora.com.br" 
+
+facebook_user: https://facebook.com/100012937635694
+google_user: https://plus.google.com/110031574864504965538?rel=author 
+
+markdown: kramdown
+
+links:
+  - title: Home
+    url: /
+  - title: Sobre
+    url: /sobre
+  - title: Empreendimentos
+    url: /empreendimentos
+  - title: Fale Conosco
+    url: /fale-conosco
+  - title: Oportunidade
+    url: /oportunidade
+
+emaillink: <a href="mailto:contato@toniconstrutora.com.br">contato@toniconstrutora.com.br</a>
+phonelink: <a href="tel:+11956510851">(11) 9 5651-0851</a>
+end: <strike>Em breve novo endereço no centro de Bragança Paulista</strike>
+atendimento: Atendemos de segunda à sexta-feira das 08:00 às 18:00
+
+exclude: ['package.json', 'src', 'node_modules', 'gulpfile.js']
+
+# html minify
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  profile: false
+
+

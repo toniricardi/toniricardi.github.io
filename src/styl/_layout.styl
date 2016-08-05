@@ -1,0 +1,206 @@
+body#home .home
+body#sobre .sobre
+body#empreendimentos .empreendimentos
+body#fale .fale
+body#oportunidade .oportunidade
+	background-color $blue
+	color $white
+	
+.page-title
+	margin rem(40px) 0 rem(20px)
+	font-family 'Orbitron'
+	font-size rem(22px)
+	font-weight normal
+	text-transform uppercase
+	letter-spacing rem(2px)
+	+above(768px)
+		font-size rem(28px)
+		
+.main-home
+	margin 0
+	padding rem(60px) 0 rem(80px)
+	width 100%
+	background url('../img/home-bg.jpg') no-repeat fixed 
+	background-size cover
+	text-align center
+	.main-home-welcome
+		margin 0
+		color $blue
+		font-size rem(20px)
+		text-transform uppercase
+	.main-home-title
+		margin-top 0
+		font-family 'Orbitron'
+		color $white
+		font-size rem(30px)
+		letter-spacing rem(3px)
+	.main-home-line
+		margin 0 auto
+		width rem(100px)
+		height rem(3px)
+		background-color $white
+	p
+		margin rem(60px) 0 rem(80px)
+		color $white
+	.main-home-btn-orcamento
+		display inline-block
+		padding rem(12px) rem(16px)
+		text-transform uppercase
+	+above(rem(480px))
+		.main-home-title
+			font-size rem(45px)
+		p
+			font-size rem(18px)
+		.main-home-btn-orcamento
+			font-size rem(20px)
+
+.services
+	.col-4 
+		box-shadow 0 2px 2px rgba(0,0,0,.3)
+		img
+			width 100%
+			display table
+		h3
+			margin 0
+			padding rem(10px) 0
+			border-top 1px solid rgba(0,0,0,.1)
+			border-bottom 1px solid rgba(0,0,0,.1)
+			text-align center
+		ul
+			padding rem(20px) rem(10px) 
+		li
+			margin-bottom rem(10px)
+			&:last-child
+				margin-bottom 0
+
+.resume-about
+	margin rem(40px) 0
+	background-color $black
+	color $white
+	.resume-about-img, .resume-about-content
+		margin-bottom 0
+	.resume-about-img
+		margin-bottom rem(50px)
+		img
+			display table
+			margin 0 auto
+			padding 0
+			overflow hidden
+	.resume-about-content
+		h2
+			padding-left rem(20px)
+			border-left 3px solid $blue
+	+above(rem(650px))
+		.resume-about-img
+			margin-bottom 0
+
+.seal
+	margin rem(40px) 0 0
+	text-align center
+
+.testimonial
+	margin-bottom rem(40px)
+	.col
+		margin-bottom 0
+	.testimonial-bg
+		padding rem(40px) 0
+		background-color #293f47
+	.testimonial-content
+		position relative
+		margin 0 0 rem(20px)
+		padding rem(10px)
+		background-color $white
+		color $grey
+	.testimonial-stars
+		display block
+		margin rem(7px) 0
+		text-align center
+		color #f9de5a
+		font-size rem(14px)
+	.testimonial-text
+		font-style italic
+		.icon-quotes-left
+			font-size rem(18px)
+	.testimonial-client
+		display block
+		text-align right
+		span
+			font-size rem(12px)
+	+above(rem(650px))
+		.testimonial-content
+			margin 0
+
+.home-contact-bg
+	padding rem(40px) 0
+	background url('../img/contact-bg.jpg') no-repeat fixed top center
+	background-size cover
+	text-align center
+	color $white
+	li 
+		margin-bottom rem(20px)
+		font-size rem(18px)
+		&:last-child
+			margin-bottom 0
+		[class^=icon-]
+			margin-right rem(7px)
+
+.flex-grid
+	display flex
+	flex-flow row wrap
+
+.box-item
+	flex 1 0 rem(200px)
+	margin rem(7px)
+	display inline-block
+	position relative
+	overflow hidden
+	img
+		display table
+		margin 0 auto
+		width 100%
+	.capa
+		a
+			opacity 0
+			position absolute
+			top 0
+			right 0
+			bottom 0
+			left 0
+			width 100%
+			height 100%
+			background-color rgba(0,0,0,0.6)
+			color $white
+			font-size rem(32px)
+			text-align center
+			transition $transition
+			&:hover
+				opacity 1
+			.icon-zoom-in
+				position absolute
+				top 50%
+				left 50%
+				margin-top -16px
+				margin-left -16px
+				width 32px
+				hidden 32px;
+
+.main-contact-page
+	h2
+		margin 0
+	li
+		padding rem(20px) 0
+		border-bottom 2px solid $lgrey
+	[class^=icon-]
+		margin-right rem(7px)
+		color $blue
+		
+.rh
+	img
+		display table
+		border 5px solid transparent
+		box-shadow 0 0 10px rgba(0,0,0,.3)
+	.rh-email
+		font-weight 900
+	+above(768px)
+		.rh-email
+			font-size rem(32px)

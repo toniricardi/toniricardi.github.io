@@ -1,0 +1,67 @@
+<div class="footer-top-bg"></div>
+<div class="newsletter" id="newsletter">
+  <div class="row">
+    <div class="newsletter-row">
+      <h3>Newsletter da <span class="dest">Toni Construtora</span></h3>
+      <p>Cadastre seu melhor e-mail para receber nossas novidades, promoções, dicas e ficar por dentro de tudo sobre o mercado da construção civil.</p>
+      <form action="//toniconstrutora.us13.list-manage.com/subscribe/post?u=79948711cc73a1a8b3ecc584f&amp;id=397dcb30dc" method="post" class="newsletter-form">
+        <label for="news" class="hidden">E-mail:</label>
+        <input type="text" id="news" name="EMAIL" placeholder="* seu melhor e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="ex.: seunome@gmail.com" required>
+        <button class="newsletter-btn">Cadastrar</button>
+      </form>
+      <span class="newsletter-security"><i class="icon-lock"></i>Suas informações estão 100% seguras!</span>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="/assets/img/logo-site-white.png" alt="Logo branca da Toni construtora">
+  </div>
+  <div class="row">
+    <div class="col col-4 footer-contact">
+      <h4>Central de <span class="dest">Atendimento</span></h4>
+      <ul>
+        <li>› <b>Tel:</b> {{ site.phonelink }}</li>
+        <li>› <b>E-mail:</b> {{ site.emaillink }}</li>
+        <li>› <b>Rua:</b> {{ site.end }}</li>
+        <li>Atendimento de segunda à sexta-feira das 08:00 às 18:00</li>
+      </ul>
+    </div>
+    <div class="col col-4 footer-links">
+      <h4>Links <span class="dest">Úteis</span></h4>
+      <ul>
+        <li>
+          <a href="http://www.abnt.org.br" target="_blank" title="link para ABNT" rel="nofollow">› ABNT (Associação Brasileira de Normas Técnicas)</a>
+        </li>
+        <li>
+          <a href="http://www.abramat.org.br" target="_blank" title="link para ABRAMAT" rel="nofollow">› ABRAMAT (Associação Brasileira da Indústria Materiais de Construção)</a>
+        </li>
+        <li>
+          <a href="http://www.anamaco.com.br" target="_blank" title="link para ANAMACO" rel="nofollow">› ANAMACO (Associação Nacional Comerciantes Materiais Construção)</a>
+        </li>
+        <li>
+          <a href="http://www.caixa.gov.br" target="_blank" title="link para Financiamento da Caixa Econômica" rel="nofollow">› Financiamento da Caixa Econômica</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col col-4 footer-social">
+      <h4>Conecte-se <span class="dest">Conosco</span></h4>
+      <ul>
+        <li>
+          <a href="{{ site.facebook_user }}" class="facebook" target="_blank" rel="nofollow"><span class="icon-facebook"></span></a>
+        </li>
+        <li>
+          <a href="{{ site.google_user }}" class="google" target="_blank" rel="nofollow"><span class="icon-google"></span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="footer-copy">
+      <p>&copy; 2016 <a href="{{ site.url }}" title="Site">Toni Construtora</a> - TODOS OS DIREITOS RESERVADOS<br><a href="{{ "/termos-de-uso" | prepend: site.baseurl }}" target="_blank"> Termos de uso</a> | <a href="{{ "/politica-de-privacidade" | prepend: site.baseurl }}" target="_blank">Política de privacidade</a></p>
+    </div>
+  </div>
+  <div class="footer-bg"></div>
+</footer>
+<a href="#" class="cd-top"><i class="icon-arrow-up2"></i></a>
+<script src="{{ "/assets/js/main.min.js" | prepend: site.baseurl }}"></script>

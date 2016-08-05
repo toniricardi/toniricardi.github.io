@@ -1,0 +1,142 @@
+.smoothbox 
+  position fixed
+  top 0
+  left 0
+  background-color #000
+  height 100%
+  width 100%
+  z-index 9999
+
+.sb-load 
+  color $white
+
+.sb-load:before 
+  content "carregando..."
+  padding 10px
+
+.smoothbox-table 
+  top 0
+  height 100%
+  width 100%
+  display table
+
+.smoothbox-centering 
+  display table-cell
+  vertical-align middle
+  top 0
+  height 100%
+  width 100%
+
+.smoothbox-sizing 
+  display none
+  position relative
+  margin 0 auto
+  padding 0
+  width 80%
+
+.sb-items 
+  margin 0 auto
+  width auto
+  padding 0
+  list-style none
+  border-radius rem(3px)
+  display table
+
+.sb-items:after 
+  content ""
+  display block
+  clear both
+  visibility hidden
+  line-height 0
+  height 0
+
+.sb-item 
+  left 0
+  top 0
+  width 100%
+  max-height 80%
+  float left
+  margin-right -100%
+  position relative
+  zoom 1
+  box-shadow 0 0 0 5px #000, 0 0 0 6px #292929
+  border-radius rem(3px)
+  transition $transition
+  -webkit-backface-visibility hidden
+
+.no-trans 
+  transition none
+
+.sb-item img 
+  max-width 100%
+  max-height 100%
+  display block
+  border-radius rem(3px)
+  position relative
+
+.sb-item-ani 
+  top 400px
+  opacity 0
+  transform scale(.5) rotate(25deg)
+
+.sb-item-ani2 
+  top 400px
+  transform scale(.5) rotate(25deg)
+  opacity 0
+
+.sb-caption 
+  position absolute
+  left 0
+  bottom 0
+  background rgba(0, 0, 0, .4)
+  color $white
+  text-shadow 1px 1px 1px #000
+  padding 5px
+  box-sizing border-box
+  -moz-box-sizing border-box
+  z-index 1
+  text-align center
+
+.sb-nav 
+  position absolute
+  top 10px
+  width 100%
+  margin 0 auto
+  display none
+  z-index 10
+  text-align center
+  opacity .5
+  font-size 0
+  transition .15s ease-out
+  zoom 1
+
+.sb-nav:hover 
+  opacity 1
+
+.sb-prev,
+.sb-next,
+.sb-cancel 
+  display inline-block
+  background rgba(0, 0, 0, .9)
+  position relative
+  zoom 1
+  outline none
+  margin 0
+  color $white !important
+  width 50px
+  height 35px
+  text-align center
+  text-decoration none
+  font-size 21px
+  line-height 33px
+  transition $transition
+
+.sb-prev 
+  border-radius 100px 0 0 100px
+
+.sb-next 
+  border-radius 0 100px 100px 0
+
+.sb-nav a:hover, 
+.sb-cancel:hover 
+  background-color $blue
