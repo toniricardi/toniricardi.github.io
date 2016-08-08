@@ -73,7 +73,6 @@ $(function() {
 
   });
 
-
   // Back to top
   var offset = 300,
     offsetOpacity = 1200,
