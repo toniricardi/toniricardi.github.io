@@ -16,10 +16,10 @@ links:
     url: /sobre
   - title: Empreendimentos
     url: /empreendimentos
-  - title: Fale Conosco
-    url: /fale-conosco
   - title: Oportunidades
     url: /oportunidades
+  - title: Fale Conosco
+    url: /fale-conosco
 
 emaillink: <a href="mailto:contato@toniconstrutora.com.br">contato@toniconstrutora.com.br</a>
 phonelink: <a href="tel:+11956510851">(11) 9 5651-0851</a>
